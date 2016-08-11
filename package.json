@@ -1,18 +1,21 @@
 {
-  "name": "less-6",
+  "name": "less-5",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
-    "browser-sync": "^2.13.0",
-    "gulp-sass": "^2.3.2",
-    "gulp": "^3.9.1",
-    "gulp-sourcemaps": "^1.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimsparrow/less-5.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimsparrow/less-5/issues"
+  },
+  "homepage": "https://github.com/dimsparrow/less-5#readme",
+  "description": ""
 }

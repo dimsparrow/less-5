@@ -1,0 +1,6 @@
+{% macro field(type, id, placeholder) %}
+	<div class="input-box">
+		<input type="{{ type|default('text') }}" id="{{ id }}">
+		<label for="{{ id }}">{{ placeholder }}</label>
+	</div>
+{% endmacro %}

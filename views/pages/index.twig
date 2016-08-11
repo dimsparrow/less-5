@@ -1,0 +1,27 @@
+{% extends '../layout/_layout.twig' %}
+
+{% block styles %}
+	{{ parent() }}
+	<link rel="stylesheet" href="">
+{% endblock %}
+
+{% block title %}
+	Homepage   
+{% endblock %}
+
+{% block content %}
+<ul>
+	{% for item in items %}
+		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
+	{% endfor %}
+	{% for item in items %}
+		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
+	{% endfor %}
+		{% for item in items %}
+		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
+	{% endfor %}	
+	{% import '../layout/utilities/form.twig' as indexForm %}
+	{{indexForm.field('text', title, name)}}
+	{% include '../layout/modules/gallery.twig' with {gallery: includes.gallery} %}
+</ul>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	{% block styles %}
+	    <link rel="stylesheet" href="css/all.css">
+	{% endblock %}
+	<!--<script src="./js/require.js" data-main="../sdhsbdf/{% block jsEntryPoint %}index{% endblock %}"></script>-->
+	<title>{% block title %}Project{% endblock %}</title>
+</head>
+<body>
+	<div class="wrapper">
+		{% include './blocks/_header.twig' %}
+		{% include './blocks/_header.twig' %}
+		<section id="main">
+			{% block content %}
+			    
+			{% endblock %}
+		</section>
+		{% include './blocks/_footer.twig' %}
+	</div>
+</body>
+</html>
