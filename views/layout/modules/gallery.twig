@@ -1,2 +1,6 @@
-
-<h1 {% if gallery.class == true %}class="asd"{% endif %}>{{ gallery.title }}</h1>
+<div class="text">
+	<div>{{ gallery.text }}</div>
+	{% if gallery.url %}
+		<div><img style="left:50%; position: relative; transsform: translateX(-50%);" width="900" src="img/{{ gallery.url }}" alt=""></div>
+	{% endif %}
+</div>

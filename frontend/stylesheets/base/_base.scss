@@ -1,5 +1,4 @@
-footer {
-	color: red;
-	display: block;
-	font: 400 18px/1.1 'Conv_agenda__', arial, sans-serif;
+.container {
+	@include container (720px, 0 10px);
+	margin: 0 auto;
 }

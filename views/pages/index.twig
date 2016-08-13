@@ -11,6 +11,7 @@
 
 {% block content %}
 <ul>
+{{name}}
 	{% for item in items %}
 		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
 	{% endfor %}
@@ -24,4 +25,12 @@
 	{{indexForm.field('text', title, name)}}
 	{% include '../layout/modules/gallery.twig' with {gallery: includes.gallery} %}
 </ul>
+
+<div>
+	{% include '../layout/modules/gallery.twig' with {gallery: includes.galleryTop} %}
+</div>
+<div>
+	{% include '../layout/modules/gallery.twig' with {gallery: includes.galleryBottom} %}
+</div>
+
 {% endblock %}

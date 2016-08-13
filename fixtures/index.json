@@ -1,14 +1,21 @@
 {
-	"name": "ramo",
+	"name": "1413afff",
 	"title": "index",
 	"items": [
-		{"name": "nick", "age": "10"},
-		{"name": "ncvn", "age": "22"}
+		{"name": "sahsdfhshsh", "age": "10"},
+		{"name": "afhafdhadfh", "age": "22"}
 	],
 	"includes": {
 		"gallery": {
-			"title": "gallery",
-			"class": true
+			"text": "232424"
+		},
+		"galleryTop": {
+			"text": "first gallery",
+			"url": "llogo.png"
+		},
+		"galleryBottom": {
+			"text": "second gallery",
+			"url": "logo.png"
 		}
 	}
 }
