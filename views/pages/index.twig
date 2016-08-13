@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block title %}
-	Homepage   
+	Homepage
 {% endblock %}
 
 {% block content %}
@@ -19,7 +19,7 @@
 	{% endfor %}
 		{% for item in items %}
 		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
-	{% endfor %}	
+	{% endfor %}
 	{% import '../layout/utilities/form.twig' as indexForm %}
 	{{indexForm.field('text', title, name)}}
 	{% include '../layout/modules/gallery.twig' with {gallery: includes.gallery} %}
