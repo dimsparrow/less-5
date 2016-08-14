@@ -6,6 +6,7 @@
 	
 	    <link rel="stylesheet" href="css/all.css">
 	
+	<script src="./js/require.js" data-main="./js/index"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -13,39 +14,57 @@
 	<div class="header-top">
 		<div class="container">
 			<div class="holder-form">
-				<form>
+				<form action="#" class="form-header">
 					 <fieldset>
 					 	<div class="row">
-					 		<input type="search" placeholder="Search for...">
-					 	</div>	
+					 		<input type="search" placeholder="Search for..." id="datepicker">
+					 	</div>
 					 </fieldset>
 				</form>
 			</div>
 			<div class="holder-plan">
-				<ul class="plan">
-					<li>
-						<a href="#">Plan Your Trip</a>
-					</li>
-					<li>
-						<a href="#">Plan a Meeting</a>
-					</li>
-				</ul>
+				<div class="plan">
+					<a href="#">Plan Your Trip</a>
+					<a href="#">Plan a Meeting</a>
+				</div>
 				<div class="links">
-					<a class="link" href="#"></a>
-					<a class="link" href="#"></a>	
+					<a class="link facebook" href="#"></a>
+					<a class="link twitter" href="#"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="header-bottom">
-
-	</div>	
+		<div class="container">
+			<strong class="logo">
+				<a href="#">Logo</a>
+			</strong>
+			<div class="holder-nav">
+				<nav class="nav">
+					<ul class="nav-menu">
+						<li>
+							<a href="">WHAT TO DO</a>
+						</li>
+						<li>
+							<a href="#">Where to Stay</a>
+						</li>
+						<li>
+							<a href="#">Trip Ideas</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="holder-book">
+					<a href="#" class="book">BOOK YOUR TRIP</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
-		<section id="main">
+		<div id="main">
 			
     contact
 
-		</section>
+		</div>
 		<footer>
 	footer
 </footer>

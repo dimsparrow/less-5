@@ -10,6 +10,9 @@
 {% endblock %}
 
 {% block content %}
+<div class="slider-top">
+	{% include '../layout/modules/slider.twig' %}
+</div>
 <ul>
 {{name}}
 	{% for item in items %}

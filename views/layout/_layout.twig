@@ -6,14 +6,15 @@
 	{% block styles %}
 	    <link rel="stylesheet" href="css/all.css">
 	{% endblock %}
+	<script src="./js/require.js" data-main="./js/index"></script>
 </head>
 <body>
 	<div class="wrapper">
 		{% include './blocks/_header.twig' %}
-		<section id="main">
+		<div id="main">
 			{% block content %}
 			{% endblock %}
-		</section>
+		</div>
 		{% include './blocks/_footer.twig' %}
 	</div>
 </body>

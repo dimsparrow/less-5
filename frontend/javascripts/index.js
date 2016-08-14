@@ -5,7 +5,8 @@ requirejs.config({
 requirejs([
 	'domReady!',
     'jquery',
-    'slick'
+    'slick',
+    'jquery-ui'
 ], function (a, $) {
     'use strict';
 
@@ -15,5 +16,7 @@ requirejs([
     	prevArrow: '.prev-arrow',
     	nextArrow: '.next-arrow'
     });
-
+      $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 });

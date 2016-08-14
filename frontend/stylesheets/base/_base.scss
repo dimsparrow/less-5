@@ -1,4 +1,27 @@
+body {
+	font: #{$font-size}/#{$line-height} $font-sans;
+	color: $font-color;
+	min-width: 320px;
+	background: $bg-color;
+}
+h2 {
+	font-size: $font-size+22;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+h3 {
+	font-size: $font-size+8;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+p {
+	margin: 0 0 30px;
+	font-size: $font-size+2;
+}
+.clearfix {
+	@include clearfix;
+}
 .container {
-	@include container (720px, 0 10px);
+	@include container (920px, 0 10px);
 	margin: 0 auto;
 }
