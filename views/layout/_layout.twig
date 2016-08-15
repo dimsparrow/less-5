@@ -6,7 +6,7 @@
 	{% block styles %}
 	    <link rel="stylesheet" href="css/all.css">
 	{% endblock %}
-	<script src="./js/require.js" data-main="./js/index"></script>
+	<script   src="./js/require.js"  data-main="{% block jsEntryPoint %}./js/index{% endblock %}"></script>
 </head>
 <body>
 	<div class="wrapper">
