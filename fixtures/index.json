@@ -1,10 +1,16 @@
 {
 	"name": "1413afff",
-	"title": "index",
+	"title": "Warner Bros. Studios VIP Tours",
 	"items": [
 		{"name": "sahsdfhshsh", "age": "10"},
 		{"name": "afhafdhadfh", "age": "22"}
 	],
+	"titles": [
+		{"title": "Warner Bros. Studios VIP Tours", "img": "img/accord-img-1.jpg"},
+		{"title": "The Tonight Show with Jay Leno", "img": "img/popular-slide-1.png"},
+		{"title": "Martial Arts History Museum", "img": "img/accord-img-1.jpg"}
+	],
+
 	"includes": {
 		"gallery": {
 			"text": "232424"
@@ -18,4 +24,5 @@
 			"url": "logo.png"
 		}
 	}
+
 }

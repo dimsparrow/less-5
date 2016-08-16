@@ -17,6 +17,20 @@
 		flex-grow: 1.85;
 		text-align: center;
 	}
+	.holder-search {
+		position: relative;
+		display: inline-block;
+	}
+	.holder-search:after {
+		content: '\f002';
+		font: 12px/14px 'FontAwesome';
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		color: $purple;
+	}
 	.holder-plan {
 		-webkit-flex-basis: 270px;
 		-ms-flex-preferred-size: 270px;
