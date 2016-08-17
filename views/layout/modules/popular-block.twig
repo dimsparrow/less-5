@@ -19,15 +19,15 @@
 		<div class="popular-block">
 			<h4>Popular Must See</h4>
 			<div class="accordion">
-				{% for title in titles %}
-					<h5 {% if loop.last %}data{% endif %}>{{title.title}}</h5>
+				{% for i in titles %}
+					<h5 {% if loop.last %}data{% endif %}>{{i.titleH}}</h5>
 					<div class="accord-block">
 						<div class="img-holder">
-							<img {% if loop.last %}data{% endif %} src="{{ title.img}}" width="136"  heigth="127" alt="image description">
+							<img {% if loop.last %}data{% endif %} src="{{i.img}}" width="136"  heigth="127" alt="image description">
 						</div>
 						<div class="text-block">
-							<div class="title">Warner Bros. Studios VIP Tours</div>
-							<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo</p>
+							<div {% if loop.last %}data{% endif %} class="title">{{i.title}}</div>
+							<p {% if loop.last %}data{% endif %}>{{i.description}}</p>
 						</div>
 					</div>
 				{% endfor %}
