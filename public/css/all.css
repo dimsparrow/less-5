@@ -185,33 +185,6 @@ input[type="text"] {
   font-weight: normal;
   font-style: normal; }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-calendar:before {
-  content: "\e900"; }
-
-.icon-facebook:before {
-  content: "\e901";
-  font-size: 21px; }
-
-.icon-twitter:before {
-  content: "\e902";
-  font-size: 21px; }
-
-.icon-twitter:hover:before {
-  color: #f48162; }
-
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2403,6 +2376,31 @@ input[type="text"] {
   overflow: visible;
   clip: auto; }
 
+.btn {
+  display: inline-block;
+  padding: 8px 29px 8px 20px;
+  border: 1px solid #ed7310;
+  background: #ec6a02;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ec6a02 0%, #ffba5f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ec6a02 0%, #ffba5f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ec6a02 0%, #ffba5f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6a02', endColorstr='#ffba5f',GradientType=0 );
+  /* IE6-9 */
+  color: #fff;
+  position: relative; }
+  .btn:after {
+    content: '\f054';
+    font: 7px/9px 'FontAwesome';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 .header-top {
   padding: 5px 0; }
   .header-top .container {
@@ -2454,13 +2452,30 @@ input[type="text"] {
       color: #662d91; }
     .header-top .holder-plan .links {
       flex-basis: 46px; }
-    .header-top .holder-plan .link {
-      background: url("../img/facebook.png") no-repeat;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 1px 0 0; }
+    .header-top .holder-plan [class^="icon-"], .header-top .holder-plan [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .header-top .holder-plan .icon-calendar:before {
+      content: "\e900"; }
+    .header-top .holder-plan .icon-facebook:before {
+      content: "\e901";
+      font-size: 21px;
+      color: #662d91; }
+    .header-top .holder-plan .icon-twitter:before {
+      content: "\e902";
+      font-size: 21px;
+      color: #662d91; }
+    .header-top .holder-plan .icon-twitter:hover:before {
+      color: #f48162; }
 
 .header-bottom {
   background: #662d91;
@@ -2586,7 +2601,7 @@ input[type="text"] {
   padding: 5px 0; }
 
 .popular {
-  padding: 32px 0;
+  padding: 32px 0 60px;
   background: #ececec;
   /* Old browsers */
   background: -moz-linear-gradient(top, #ececec 0%, #f9f9f9 100%);
@@ -2604,7 +2619,7 @@ input[type="text"] {
   .popular .see-block {
     border-bottom: 1px solid #c7c7c7;
     flex-basis: 44.45%;
-    padding: 0 0 34px; }
+    padding: 0 10px 34px 0; }
   .popular .one-time .title-img {
     background: url("../img/see.png") no-repeat;
     width: 404px;
@@ -2621,5 +2636,73 @@ input[type="text"] {
       top: -395px; }
   .popular .popular-block {
     flex-basis: 44.45%; }
+  .popular h5 {
+    padding: 7px 7px 7px 35px;
+    position: relative; }
+    .popular h5:before {
+      content: '\f054';
+      font: 12px/14px 'FontAwesome';
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: #662d91; }
+  .popular .accord-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 22px 34px;
+    background: whitesmoke;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, whitesmoke 0%, #f2f2f2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, whitesmoke 0%, #f2f2f2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, whitesmoke 0%, #f2f2f2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f2f2f2',GradientType=0 );
+    /* IE6-9 */ }
+    .popular .accord-block .img-block {
+      margin: 0 10px 0 0; }
+    .popular .accord-block .img-holder {
+      padding: 7px;
+      background: #fff;
+      border: 1px solid #b7b7b7; }
+    .popular .accord-block img {
+      border: 1px solid #b7b7b7; }
+    .popular .accord-block .text-block {
+      padding: 7px 0; }
+      .popular .accord-block .text-block .title {
+        margin: 0 0 10px; }
+
+.featured {
+  position: relative;
+  padding: 90px 0 66px;
+  background: #eeeeed;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeed 36%, #bcc3e1 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eeeeed 36%, #bcc3e1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eeeeed 36%, #bcc3e1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeed', endColorstr='#bcc3e1',GradientType=0 );
+  /* IE6-9 */ }
+  .featured:before {
+    content: '';
+    background: url("../img/light-trips.png") no-repeat;
+    position: absolute;
+    width: 688px;
+    height: 585px;
+    top: 8px;
+    left: -440px; }
+  .featured:after {
+    content: '';
+    background: url("../img/light-trips.png") no-repeat;
+    position: absolute;
+    width: 688px;
+    height: 585px;
+    top: 8px;
+    right: -200px; }
 
 /*# sourceMappingURL=maps/all.css.map */

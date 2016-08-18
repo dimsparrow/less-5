@@ -11,30 +11,13 @@
 
 {% block content %}
 <div class="slider-top">
-	{% include '../layout/modules/slider.twig' %}
+	{% include '../layout/modules/slider.twig' with {gal: includes.galleryTop} %}
 </div>
 {% include '../layout/modules/popular-block.twig' %}
-<ul>
-{{name}}
-	{% for item in items %}
-		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
-	{% endfor %}
-	{% for item in items %}
-		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
-	{% endfor %}
-		{% for item in items %}
-		<li {% if loop.last %}data{% endif %}>{{item.name}}{{item.age}}</li>
-	{% endfor %}
-	{% import '../layout/utilities/form.twig' as indexForm %}
-	{{indexForm.field('text', title, name)}}
-	{% include '../layout/modules/gallery.twig' with {gallery: includes.gallery} %}
-</ul>
-
-<div>
-	{% include '../layout/modules/gallery.twig' with {gallery: includes.galleryTop} %}
+<div class="slider-bottom">
+	{% include '../layout/modules/slider.twig' with {gal: includes.galleryBottom} %}
 </div>
-<div>
-	{% include '../layout/modules/gallery.twig' with {gallery: includes.galleryBottom} %}
-</div>
-
+{% include '../layout/modules/featured-block.twig' %}
+<!--  	{% import '../layout/utilities/form.twig' as indexForm %}
+	{{indexForm.field('text', title, name)}} -->
 {% endblock %}

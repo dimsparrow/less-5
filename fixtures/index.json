@@ -54,15 +54,20 @@
 
 	"includes": {
 		"gallery": {
-			"text": "232424"
+			"images": [
+				{"url": "slide-1.jpg"},
+				{"url": "b-slide-1.jpg"}
+			]	
 		},
 		"galleryTop": {
-			"text": "first gallery",
-			"url": "logo.png"
+			"images": [
+				{"url": "slide-1.jpg"}				
+			]			
 		},
 		"galleryBottom": {
-			"text": "second gallery",
-			"url": "logo.png"
+			"images": [
+				{"url": "b-slide-1.jpg"}
+			]	
 		}
 	}
 }

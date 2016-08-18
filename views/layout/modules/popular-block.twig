@@ -11,7 +11,7 @@
 						<h3>Russian Jazz Ballet Valery</h3>
 						<div class="title">Sit amet consectetuer adipiscing elit sed</div>
 						<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</p>
-						<a href="#" class="btn"></a>
+						<a href="#" class="btn">LEARN MORE</a>
 					</div>
 				</li>
 			</ul>
@@ -22,8 +22,10 @@
 				{% for i in titles %}
 					<h5 {% if loop.last %}data{% endif %}>{{i.titleH}}</h5>
 					<div class="accord-block">
-						<div class="img-holder">
-							<img {% if loop.last %}data{% endif %} src="{{i.img}}" width="136"  heigth="127" alt="image description">
+						<div class="img-block">
+							<div class="img-holder">
+								<img {% if loop.last %}data{% endif %} src="{{i.img}}" width="136"  heigth="127" alt="image description">
+							</div>
 						</div>
 						<div class="text-block">
 							<div {% if loop.last %}data{% endif %} class="title">{{i.title}}</div>

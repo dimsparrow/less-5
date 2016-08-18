@@ -42,7 +42,7 @@
 	}
 }
 .popular {
-	padding: 32px 0;
+	padding: 32px 0 60px;
 	background: rgb(236,236,236); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgb(236,236,236) 0%, rgb(249,249,249) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgb(236,236,236) 0%,rgb(249,249,249) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -56,7 +56,7 @@
 	.see-block {
 		border-bottom: 1px solid #c7c7c7;
 		flex-basis: 44.45%;
-		padding: 0 0 34px; 
+		padding: 0 10px 34px 0; 
 	}
 	.one-time {
 		.title-img {
@@ -78,5 +78,74 @@
 	}
 	.popular-block {
 		flex-basis: 44.45%;
+	}
+	h5 {
+		padding: 7px 7px 7px 35px;
+		position: relative;
+		&:before {
+			content: '\f054';
+			font: 12px/14px 'FontAwesome';
+			position: absolute;
+			left: 16px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			color: $purple;
+		} 
+	}
+	.accord-block {
+		display: flex;
+		justify-content: space-between;
+		padding: 16px 16px 22px 34px;
+		background: rgb(245,245,245); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgb(245,245,245) 0%, rgb(242,242,242) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgb(245,245,245) 0%,rgb(242,242,242) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgb(245,245,245) 0%,rgb(242,242,242) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+
+		.img-block {
+			margin: 0 10px 0 0;
+		}
+		.img-holder {
+			padding: 7px;
+			background: $white;
+			border: 1px solid #b7b7b7;
+		}
+		img {
+			border: 1px solid #b7b7b7;		
+		}
+		.text-block {
+			padding: 7px 0;
+			.title {
+				margin: 0 0 10px; 
+			}
+		}
+	}
+}
+.featured {
+	position: relative;
+	padding: 90px 0 66px;	
+	background: rgb(238,238,237); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(238,238,237) 36%, rgb(188,195,225) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(238,238,237) 36%,rgb(188,195,225) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(238,238,237) 36%,rgb(188,195,225) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeed', endColorstr='#bcc3e1',GradientType=0 ); /* IE6-9 */
+	&:before {
+		content: '';
+		background: url('../img/light-trips.png') no-repeat;
+		position: absolute;
+		width: 688px;
+		height: 585px;
+		top: 8px;
+		left: -440px
+	}
+		&:after {
+		content: '';
+		background: url('../img/light-trips.png') no-repeat;
+		position: absolute;
+		width: 688px;
+		height: 585px;
+		top: 8px;
+		right: -200px;
 	}
 }

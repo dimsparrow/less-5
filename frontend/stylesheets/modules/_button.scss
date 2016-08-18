@@ -1,0 +1,21 @@
+.btn {
+	display: inline-block;
+	padding: 8px 29px 8px 20px;
+	border: 1px solid #ed7310;
+	background: rgb(236,106,2); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(236,106,2) 0%, rgb(255,186,95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(236,106,2) 0%,rgb(255,186,95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(236,106,2) 0%,rgb(255,186,95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6a02', endColorstr='#ffba5f',GradientType=0 ); /* IE6-9 */
+	color: $white;
+	position: relative;
+	&:after {
+		content: '\f054';
+		font: 7px/9px 'FontAwesome';
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}

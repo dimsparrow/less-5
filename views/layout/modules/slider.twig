@@ -1,42 +1,25 @@
 <div class="main-slider">
 	<ul class="slider-container">
-		<li>
-			<div class="img-holder">
-				<img src="img/slide-1.jpg" width="1200" height="486" alt="image description">
-			</div>
-			<div class="title-slide">
-				fpo
-			</div>
-			<div class="text-block">
-				<div class="title">
-					<h2>Rolling… and action</h2>
-					<p>Check-in at the perfect place to check out movie and TV magic</p>
+		{% for i in gal.images %}
+			<li>
+				<div class="img-holder">
+					<img {% if loop.last %}data{% endif %} src="img/{{i.url}}" width="1200" height="486" alt="image description">
 				</div>
-				<div class="offer">
-					<p>WHAT TO DO: 
-						<a href="#">STUDIO TOURS</a>
-					</p>
+				<div class="title-slide">
+					fpo
 				</div>
-			</div>
-<!-- 		</li>
-		<li>
-			<div class="img-holder">
-				<img src="img/slide-1.jpg" width="1200" height="486" alt="image description">
-			</div>
-			<div class="title-slide">
-				fpo
-			</div>
-			<div class="text-block">
-				<div class="title">
-					<h2>Rolling… and action</h2>
-					<p>Check-in at the perfect place to check out movie and TV magic</p>
+				<div class="text-block">
+					<div class="title">
+						<h2>Rolling… and action</h2>
+						<p>Check-in at the perfect place to check out movie and TV magic</p>
+					</div>
+					<div class="offer">
+						<p>WHAT TO DO: 
+							<a href="#">STUDIO TOURS</a>
+						</p>
+					</div>
 				</div>
-				<div class="offer">
-					<h3>WHAT TO DO: 
-						<a href="#">STUDIO TOURS</a>
-					</h3>
-				</div>
-			</div>
-		</li> -->
+			</li>
+		{% endfor %}
 	</ul>
 </div>
