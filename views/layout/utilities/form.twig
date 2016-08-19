@@ -1,6 +1,23 @@
-{% macro field(type, id, placeholder) %}
+<!-- {% macro field(type, id, placeholder) %}
 	<div class="input-box">
 		<input type="{{ type|default('text') }}" id="{{ id }}">
 		<label for="{{ id }}">{{ placeholder }}</label>
 	</div>
-{% endmacro %}
+{% endmacro %} -->
+<form action="#" class="book-form">
+	<fieldset>
+		<div class="title-form" >
+			<a href="#">BOOK YOUR TRIP</a>
+		</div>
+		<div class="row">
+			<input type="text" id="in" >
+			<label for="in">Check in</label>
+		</div><div class="row">
+			<input type="text" id="out">
+			<label for="out">Check out</label>
+		</div>
+		<div class="row-submit">
+			<input type="submit" id="" value="search">
+		</div>
+	</fieldset>
+</form>

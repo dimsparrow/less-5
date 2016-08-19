@@ -11,7 +11,33 @@
 	
 	<link rel="stylesheet" href="">
 
-	<script   src="./js/require.js"  data-main="./js/index"></script>
+	<script  src="./js/require.js"  data-main="./js/index"></script>
+	
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	   <script>
+		var Homepage = {
+	init: function(){
+		this.click();
+	},
+	click: function(){
+		$('.book').on('click', function(){
+			if(!$(this).hasClass('active')){
+				$(this).addClass('active');
+				$(this).next().slideDown('fast');
+			} else {
+				$(this).removeClass('active');
+				$(this).next().slideUp('fast');
+			}
+		});
+	}
+};
+
+$(window).on('load', function(){
+	Homepage.init();
+});
+
+	</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -270,41 +296,146 @@
 	<div class="container">
 		<h4>Featured trip ideas</h4>
 		<div class="trips">
-			<div class="trip">
-				<div class="img-holder">
-					<img src="img/trip-1.jpg" width="163" heigth="105" alt="image description">
+			<div class="row">
+				<div class="trip">
+					<div class="img-block">
+						<div class="img-holder">
+							<img src="img/trip-1.jpg" width="163" heigth="105" alt="image description">
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="title">Delenit augue duis dolore</div>
+						<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica<a href="#"> formas humanitatis</a> per seacula.</p>
+						<a href="#" class="btn">VIEW</a>
+					</div>
 				</div>
-				<div class="text-block">
-					<div class="title">Delenit augue duis dolore</div>
-					<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica<a href="#"> formas humanitatis</a> per seacula.</p>
-					<a href="#" class="btn">VIEW</a>
+				<div class="trip">
+					<div class="img-block">
+						<div class="img-holder">
+							<img src="img/trip-2.jpg" width="163" heigth="105" alt="image description">
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="title">Delenit augue duis dolore</div>
+						<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica<a href="#"> formas humanitatis</a> per seacula.</p>
+						<a href="#" class="btn">VIEW</a>
+					</div>
 				</div>
 			</div>
-			<div class="trip">
-				<div class="img-holder">
-					<img src="img/trip-2.jpg" width="163" heigth="105" alt="image description">
+			<div class="row">
+				<div class="trip">
+					<div class="img-block">
+						<div class="img-holder">
+							<img src="img/trip-3.jpg" width="163" heigth="105" alt="image description">
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="title">Delenit augue duis dolore</div>
+						<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica<a href="#"> formas humanitatis</a> per seacula.</p>
+						<a href="#" class="btn">VIEW</a>
+					</div>
 				</div>
-				<div class="text-block">
-					<div class="title">Delenit augue duis dolore</div>
-					<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica<a href="#"> formas humanitatis</a> per seacula.</p>
-					<a href="#" class="btn">VIEW</a>
+				<div class="trip">
+					<div class="img-block">
+						<div class="img-holder">
+							<img src="img/trip-4.jpg" width="163" heigth="105" alt="image description">
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="title">Delenit augue duis dolore</div>
+						<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica<a href="#"> formas humanitatis</a> per seacula.</p>
+						<a href="#" class="btn">VIEW</a>
+					</div>
 				</div>
 			</div>
+		</div>
+		<div class="all-holder">
+			<a href="#" class="all">
+				See all trip ideas
+			</a>
 		</div>
 	</div>
 </div>
 <!--  	
 	
 	<div class="input-box">
-		<input type="text" id="Warner Bros. Studios VIP Tours">
-		<label for="Warner Bros. Studios VIP Tours">1413afff</label>
+		<input type="text" id="">
+		<label for=""></label>
 	</div>
  -->
 
 		</div>
-		<footer>
-	footer
+		<footer class="footer">
+	<div class="container">
+		<div class="sponsor">
+			<img src="img/sponsor.jpg" width="517" height="112" alt="image description">
+		</div>
+		<nav class="footer-nav">
+			<ul class="footer-menu">
+				
+					<li >About us</li>
+				
+					<li >Press</li>
+				
+					<li >Contact us</li>
+				
+					<li >What to do</li>
+				
+					<li >Where to stay</li>
+				
+					<li >Trip ideas</li>
+				
+					<li >Plan your trip</li>
+				
+					<li >Plan a meeting</li>
+				
+					<li data>Privacy policyPrivacy policy</li>
+				
+			</ul>
+		</nav>
+		<p>&copy; 2013 Visit Burbank / Burbank Hospitality Association. All Rights Reserved.</p>
+	</div>
 </footer>
+		
+	<div class="footer-bottom">
+	<div class="container">
+		<div class="connect">
+			<div class="title">LETS CONNECT</div>
+			<div class="links">
+				<a href="#" class="fa fa-facebook-square"></a>
+				<a href="#" class="fa fa-linkedin-square"></a>
+				<a href="#" class="fa fa-youtube-square"></a>
+				<a href="#" class="fa fa-pinterest"></a>
+				<a href="#" class="fa fa-google-plus-square"></a>
+				<a href="#" class="fa fa-tripadvisor"></a>
+			</div>
+		</div>
+		<div class="holder-book">
+			<a href="#" class="book">BOOK YOUR TRIP</a>
+			<!--  -->
+<form action="#" class="book-form">
+	<fieldset>
+		<div class="title-form" >
+			<a href="#">BOOK YOUR TRIP</a>
+		</div>
+		<div class="row">
+			<input type="text" id="in" >
+			<label for="in">Check in</label>
+		</div><div class="row">
+			<input type="text" id="out">
+			<label for="out">Check out</label>
+		</div>
+		<div class="row-submit">
+			<input type="submit" id="" value="search">
+		</div>
+	</fieldset>
+</form>
+
+		</div>
+	</div>
+</div>
+
+
 	</div>
 </body>
 </html>

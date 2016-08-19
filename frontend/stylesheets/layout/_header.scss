@@ -28,6 +28,7 @@
 		right: 16px;
 		top: 50%;
 		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
 		color: $purple;
 	}
@@ -47,6 +48,9 @@
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 		.plan {
 			a {
@@ -55,6 +59,8 @@
 			}
 		}
 		.links {
+			-webkit-flex-basis: 46px;
+			-ms-flex-preferred-size: 46px;
 			flex-basis: 46px;
 		}
 
@@ -67,6 +73,7 @@
 			font-variant: normal;
 			text-transform: none;
 			line-height: 1;
+			display: inline-block;
 
 		/* Better Font Rendering =========== */
 			-webkit-font-smoothing: antialiased;

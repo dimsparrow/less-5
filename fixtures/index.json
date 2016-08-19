@@ -1,9 +1,14 @@
 {
-	"name": "1413afff",
-	"title": "Warner Bros. Studios VIP Tours",
 	"items": [
-		{"name": "sahsdfhshsh", "age": "10"},
-		{"name": "afhafdhadfh", "age": "22"}
+		{"text": "About us"},
+		{"text": "Press"},
+		{"text": "Contact us"},
+		{"text": "What to do"},
+		{"text": "Where to stay"},
+		{"text": "Trip ideas"},
+		{"text": "Plan your trip"},
+		{"text": "Plan a meeting"},
+		{"text": "Privacy policyPrivacy policy"}
 	],
 	"titles": [
 		{"titleH": "Warner Bros. Studios VIP Tours",
@@ -30,7 +35,7 @@
 		"img": "img/accord-img-1.jpg",
 		"title": "See the “Tonight Show” with Jay Leno in person", 
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
-		
+
 		{"titleH": "It’s A Wrap",
 		"img": "img/accord-img-1.jpg",
 		"title": "See the “Tonight Show” with Jay Leno in person", 

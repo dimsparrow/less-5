@@ -1,3 +1,15 @@
-<footer>
-	footer
+<footer class="footer">
+	<div class="container">
+		<div class="sponsor">
+			<img src="img/sponsor.jpg" width="517" height="112" alt="image description">
+		</div>
+		<nav class="footer-nav">
+			<ul class="footer-menu">
+				{% for i in items %}
+					<li {% if loop.last %}data{% endif %}>{{i.text}}</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<p>&copy; 2013 Visit Burbank / Burbank Hospitality Association. All Rights Reserved.</p>
+	</div>
 </footer>
