@@ -22,6 +22,7 @@ requirejs([
 	var Homepage = {
 		init: function(){
 			this.click();
+
 		},
 		click: function(){
 			$('.book').on('click', function(event){
