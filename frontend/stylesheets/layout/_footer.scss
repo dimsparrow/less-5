@@ -19,69 +19,69 @@
 	p {
 		margin: 0 0 10px;
 	}
-}
-.footer-bottom {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 5;
-	background: $purple;
-	padding: 8px 0;
-	min-width: 18px;
-	.container {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-	}
-	.connect {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-	}
-	.title {
-		margin: 0 16px 0 0;
-	}
-	[class^="fa-"]:before, [class*=" fa-"]:before {
-		font-size: 24px;
-		color: $white;
-		opacity: 0.5;
-	}
-	.holder-book {
-		font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
-		font-size: 18px;
-		text-transform: uppercase;
-		padding: 0 35px 0 38px;
-		position: relative;
-	}
-	.book {
-		color: $white;
-		position: relative;
-		&:before {
-			content: '\e900';
-			font-family: 'icomoon' !important;
+	&__bottom{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 5;
+		background: $purple;
+		padding: 8px 0;
+		min-width: 18px;
+		.container {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		.connect {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		.title {
+			margin: 0 16px 0 0;
+		}
+		[class^="fa-"]:before, [class*=" fa-"]:before {
 			font-size: 24px;
-			position: absolute;
-			top: 50%;
-			left: -38px;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
-			transform: translateY(-50%);
+			color: $white;
 			opacity: 0.5;
+		}
+		.holder-book {
+			font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+			font-size: 18px;
+			text-transform: uppercase;
+			padding: 0 35px 0 38px;
+			position: relative;
+		}
+		.book {
+			color: $white;
+			position: relative;
+			&:before {
+				content: '\e900';
+				font-family: 'icomoon' !important;
+				font-size: 24px;
+				position: absolute;
+				top: 50%;
+				left: -38px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				opacity: 0.5;
+			}
 		}
 	}
 }

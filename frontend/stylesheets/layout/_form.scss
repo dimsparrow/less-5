@@ -1,6 +1,5 @@
 .book-form {
 	padding: 5px;
-	width: 220px;
 	background: $white;
 	display: none;
 	position: absolute;
@@ -9,23 +8,42 @@
 	.row {
 		padding: 20px 50px 20px 23px;
 		border-bottom: 1px solid #f2f2f2;
+		position: relative;
+		background: #fff;
 		&:last-child {
 			border-bottom: none;
 		}
 	}
 	input[type="text"] {
-		display: none;
+		border: 0;
+		appearance: none;
+		&:focus,
+		&:valid{
+			outline: 0;
+			& ~ label {
+				span{
+					transform: scale(0);
+				}
+			}
+		}
 	}
 	label {
-		color: #000;
 		font-size: 16px;
 		font-family: 'Conv_AgendaMedium', Helvetica, sans-serif;
-		width: 100%;
-		position: relative;
+		width: 73%;
 		display: block;
 		color: #4f4c4d;
 		text-transform: none;
 		cursor: pointer;
+		position: absolute;
+		left: 23px;
+		top: 22px;
+		span{
+			transition: transform .3s ease;
+			will-change: transform;
+			transform-origin: 0 50%;
+			display: inline-block;
+		}
 		&:after {
 			content: '\e900';
 			font-family: 'icomoon' !important;
@@ -46,10 +64,7 @@
 			position: absolute;
 			left: 16px;
 			top: 50%;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
-			color: $white;
 			color: #ae56f4;
 		}
 	}
@@ -70,9 +85,7 @@
 		background: #ff9b4b;
 		padding: 20px 20px 20px 60px;
 		width: 100%;
-		-webkit-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-box-sizing: border-box;
+		box-sizing: border-box;
 		color: $white;
 		font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
 		font-size: 18px;
@@ -84,8 +97,6 @@ box-sizing: border-box;
 			position: absolute;
 			top: 50%;
 			left: 16px;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 			color: #ffff96;	}
 	}

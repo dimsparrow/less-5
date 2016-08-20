@@ -11,7 +11,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-	<div class="header-top">
+	<div class="header__top">
 		<div class="container">
 			<div class="holder-form">
 				<form action="#" class="form-header">
@@ -36,9 +36,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="header-bottom">
+	<div class="header__bottom">
 		<div class="container">
-			<strong class="logo">
+			<strong class="header__logo">
 				<a href="#">Logo</a>
 			</strong>
 			<div class="holder-nav">
@@ -57,6 +57,26 @@
 				</nav>
 				<div class="holder-book">
 					<a href="#" class="book">BOOK YOUR TRIP</a>
+					<!--  -->
+<form action="#" class="book-form">
+	<fieldset>
+		<div class="title-form" >
+			<a href="#">BOOK YOUR TRIP</a>
+		</div>
+		<div class="row">
+			<input type="text" id="in" required>
+			<label for="in"><span>Check in</span></label>
+		</div>
+		<div class="row">
+			<input type="text" id="out" required>
+			<label for="out"><span>Check out</span></label>
+		</div>
+		<div class="row-submit">
+			<input type="submit" id="" value="search">
+		</div>
+	</fieldset>
+</form>
+
 				</div>
 			</div>
 		</div>
@@ -81,6 +101,7 @@
 	</div>
 </footer>
 		
+
 		
 	</div>
 </body>

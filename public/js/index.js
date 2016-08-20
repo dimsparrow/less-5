@@ -16,28 +16,30 @@ requirejs([
 		prevArrow: '.prev-arrow',
 		nextArrow: '.next-arrow'
 	});
-	  $( function() {
+
 	$( "#datepicker" ).datepicker();
-  } );
-});
 
-var Homepage = {
-	init: function(){
-		this.click();
-	},
-	click: function(){
-		$('.book').on('click', function(){
-			if(!$(this).hasClass('active')){
-				$(this).addClass('active');
-				$(this).next().slideDown('fast');
-			} else {
-				$(this).removeClass('active');
-				$(this).next().slideUp('fast');
-			}
-		});
-	}
-};
+	var Homepage = {
+		init: function(){
+			this.click();
+		},
+		click: function(){
+			$('.book').on('click', function(event){
+				$(this).toggleClass('active');
+				$(this).next().slideToggle();
+				event.preventDefault();
+			});
+			$(document).on('click', function(event){
+				if(!$(event.target).hasClass('book') && $(event.target).closest('.book-form').length != 1){
+					$('.book').removeClass('active');
+					$('.book').next().slideUp();
+				}
+			});
+		}
+	};
 
-$(window).on('load', function(){
 	Homepage.init();
+
 });
+
+
