@@ -9,14 +9,12 @@
 		<div class="title-form" >
 			<a href="#">BOOK YOUR TRIP</a>
 		</div>
-		<div class="row">
-			<input type="text" id="in" required>
-			<label for="in"><span>Check in</span></label>
-		</div>
-		<div class="row">
-			<input type="text" id="out" required>
-			<label for="out"><span>Check out</span></label>
-		</div>
+		{% for i in forms.input %}
+			<div class="row">
+				<input class="datepicker"type="text" id="{{i.id}}" required>
+				<label  for="{{i.id}}"><span>{{i.title}}</span></label>
+			</div>
+		{% endfor %}
 		<div class="row-submit">
 			<input type="submit" id="" value="search">
 		</div>

@@ -13,66 +13,87 @@
 	"titles": [
 		{"titleH": "Warner Bros. Studios VIP Tours",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "The Tonight Show with Jay Leno",
 		"img": "img/popular-slide-1.png",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "Martial Arts History Museum",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "NBC Burbank Studio Tour",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "Starlight Bowl",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "It’s A Wrap",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "Hubba Hubba",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "Chaba Thai Spa",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." },
 
 		{"titleH": "Racer’s Edge Indoor Karting",
 		"img": "img/accord-img-1.jpg",
-		"title": "See the “Tonight Show” with Jay Leno in person", 
+		"title": "See the “Tonight Show” with Jay Leno in person",
 		"description": "Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis." }
 	],
+
+	"sponsors": [
+		{"sponsor": "sponsor-1.jpg", "width": "110", "height": "103"},
+		{"sponsor": "sponsor-2.jpg", "width": "227", "height": "52"},
+		{"sponsor": "sponsor-3.jpg", "width": "93", "height": "102"}
+	],
+
+	"include": {
+		"form": {
+			"input": [
+				{"id": "in", "title": "Check in"},
+				{"id": "out", "title": "Check out"}
+			]
+		},
+		"formBottom": {
+			"input": [
+				{"id": "in-b", "title": "Check in"},
+				{"id": "out-b", "title": "Check out"}
+			]
+		}
+	},
 
 	"includes": {
 		"gallery": {
 			"images": [
 				{"url": "slide-1.jpg"},
 				{"url": "b-slide-1.jpg"}
-			]	
+			]
 		},
 		"galleryTop": {
 			"images": [
-				{"url": "slide-1.jpg"}				
-			]			
+				{"url": "slide-1.jpg"}
+			]
 		},
 		"galleryBottom": {
 			"images": [
 				{"url": "b-slide-1.jpg"}
-			]	
+			]
 		}
 	}
 }

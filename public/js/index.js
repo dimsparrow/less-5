@@ -17,7 +17,7 @@ requirejs([
 		nextArrow: '.next-arrow'
 	});
 
-	$( "#datepicker" ).datepicker();
+	$( ".datepicker" ).datepicker();
 
 	var Homepage = {
 		init: function(){

@@ -13,7 +13,7 @@
 		</div>
 		<div class="holder-book">
 			<a href="#" class="book">BOOK YOUR TRIP</a>
-			{% include '../utilities/form.twig' %}
+			{% include '../utilities/form.twig'  with {forms: include.formBottom} %}
 		</div>
 	</div>
 </div>

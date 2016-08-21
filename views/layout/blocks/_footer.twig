@@ -1,12 +1,18 @@
 <footer class="footer">
 	<div class="container">
-		<div class="sponsor">
-			<img src="img/sponsor.jpg" width="517" height="112" alt="image description">
+		<div class="sponsors">
+			{% for i in sponsors %}
+				<a href="#">
+					<img src="img/{{i.sponsor}}" width="{{i.width}}" height="{{i.height}}" alt="image description">
+				</a>
+			{% endfor %}
 		</div>
 		<nav class="footer-nav">
 			<ul class="footer-menu">
 				{% for i in items %}
-					<li {% if loop.last %}data{% endif %}>{{i.text}}</li>
+					<li>
+						<a href="#">{{i.text}}</a>
+					</li>
 				{% endfor %}
 			</ul>
 		</nav>
