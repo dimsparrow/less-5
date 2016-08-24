@@ -5,19 +5,21 @@ requirejs.config({
 requirejs([
 	'domReady!',
 	'jquery',
-	'slick',
-	'jquery-ui'
+	'jquery-ui',
+	'slick'
 ], function (a, $) {
 	'use strict';
 
-	$('.nav').slick({
-		dots: true,
-		appendDots: '.pagination',
-		prevArrow: '.prev-arrow',
-		nextArrow: '.next-arrow'
+	$( ".datepicker" ).datepicker();
+	$( ".accordion" ).accordion();
+	$( ".selector" ).accordion({
+ 	 heightStyle: "auto"
 	});
 
-	$( ".datepicker" ).datepicker();
+
+	 $('.slider-container').slick({
+		dots: true,
+  	});
 
 	var Homepage = {
 		init: function(){

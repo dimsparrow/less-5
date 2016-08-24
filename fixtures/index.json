@@ -79,19 +79,17 @@
 	},
 
 	"includes": {
-		"gallery": {
-			"images": [
-				{"url": "slide-1.jpg"},
-				{"url": "b-slide-1.jpg"}
-			]
-		},
 		"galleryTop": {
 			"images": [
+				{"url": "slide-1.jpg"},
+				{"url": "b-slide-1.jpg"},
 				{"url": "slide-1.jpg"}
 			]
 		},
 		"galleryBottom": {
 			"images": [
+				{"url": "b-slide-1.jpg"},
+				{"url": "slide-1.jpg"},
 				{"url": "b-slide-1.jpg"}
 			]
 		}
