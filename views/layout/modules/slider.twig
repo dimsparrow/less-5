@@ -1,25 +1,27 @@
-<div class="main-slider">
-	<ul class="slider-container">
-		{% for i in gal.images %}
-			<li>
-				<div class="img-holder">
-					<img src="img/{{i.url}}" width="1200" height="486" alt="image description">
+<ul class="{{gal.class}}">
+	{% for i in gal.images %}
+		<li>
+			<div class="img-holder">
+				<img src="img/{{i.url}}" width="1200" height="486" alt="image description">
+			</div>
+			<div class="title-slide">
+				fpo
+			</div>
+			<div class="text-block">
+				<div class="title">
+					<h2>Rolling… and action</h2>
+					<p>Check-in at the perfect place to check out movie and TV magic</p>
 				</div>
-				<div class="title-slide">
-					fpo
+				<div class="offer">
+					<p>WHAT TO DO:
+						<a href="#"> STUDIO TOURS</a>
+					</p>
 				</div>
-				<div class="text-block">
-					<div class="title">
-						<h2>Rolling… and action</h2>
-						<p>Check-in at the perfect place to check out movie and TV magic</p>
-					</div>
-					<div class="offer">
-						<p>WHAT TO DO:
-							<a href="#"> STUDIO TOURS</a>
-						</p>
-					</div>
-				</div>
-			</li>
-		{% endfor %}
-	</ul>
+			</div>
+		</li>
+	{% endfor %}
+</ul>
+<div class="{{gal.dots}}">
+	<button class="{{gal.prev}}"></button>
+	<button class="{{gal.next}}"></button>
 </div>

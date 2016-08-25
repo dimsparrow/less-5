@@ -80,13 +80,22 @@
 
 	"includes": {
 		"galleryTop": {
+			"class": "slider-top",
+			"dots": "slider-dots",
+			"prev": "prev",
+			"next": "next",
 			"images": [
 				{"url": "slide-1.jpg"},
 				{"url": "b-slide-1.jpg"},
-				{"url": "slide-1.jpg"}
+				{"url": "slide-1.jpg"},
+				{"url": "b-slide-1.jpg"}
 			]
 		},
 		"galleryBottom": {
+			"class": "slider-bottom",
+			"dots": "slider-dots-b",
+			"prev": "prev-b",
+			"next": "next-b",
 			"images": [
 				{"url": "b-slide-1.jpg"},
 				{"url": "slide-1.jpg"},

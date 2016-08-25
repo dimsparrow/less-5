@@ -1,4 +1,4 @@
-.slider-container {
+.holder-slider {
 	img {
 		width: 100%;
 		height: auto;
@@ -170,7 +170,6 @@
 	}
 }
 .featured {
-	position: relative;
 	padding: 90px 0 66px;
 	background: rgb(238,238,237); /* Old browsers */ /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgb(238,238,237) 15%,rgb(188,195,225) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -178,23 +177,26 @@
 	background: linear-gradient(to bottom,  rgb(238,238,237) 15%,rgb(188,195,225) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeed', endColorstr='#bcc3e1',GradientType=0 ); /* IE6-9 */
 	overflow: hidden;
-	&:before {
-		content: '';
-		background: url('../img/light-trips.png') no-repeat;
-		position: absolute;
-		width: 688px;
-		height: 585px;
-		top: 8px;
-		left: -330px;
-	}
-		&:after {
-		content: '';
-		background: url('../img/light-trips.png') no-repeat;
-		position: absolute;
-		width: 688px;
-		height: 585px;
-		top: 8px;
-		right: -250px;
+	.container {
+		position: relative;
+		&:before {
+			content: '';
+			background: url('../img/light-trips.png') no-repeat;
+			position: absolute;
+			width: 688px;
+			height: 585px;
+			top: 8px;
+			left: -330px;
+		}
+			&:after {
+			content: '';
+			background: url('../img/light-trips.png') no-repeat;
+			position: absolute;
+			width: 688px;
+			height: 585px;
+			top: 8px;
+			right: -250px;
+		}
 	}
 	.trips {
 		background: $white;
@@ -256,36 +258,8 @@
 		z-index: 3;
 	}
 }
-.slick-dots li button {
-	padding: 0;
+.holder-slider {
+	position: relative;
 }
-.slick-dots li button:before {
-	position: absolute;
-	top: 16%;
-	left: 16%;
-	content: "";
-	width: 10px;
-	height: 10px;
-	opacity: 0;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	background: #233e6f;
-}
-.slick-dots li button {
-	border: 1px solid #b7b7b7;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	background: transparent;
-	display: block;
-	height: 16px;
-	width: 16px;
-	 outline: none;
-	line-height: 0px;
-	font-size: 0px;
-	cursor: pointer;
-	-webkit-box-shadow: 3px 3px 8px #b7b7b7 inset;
-	box-shadow: 3px 3px 8px #b7b7b7 inset;
-}
-.slick-dotted.slick-slider {
-	margin-bottom: 0;
-}
+
+

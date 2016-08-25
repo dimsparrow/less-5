@@ -13,13 +13,23 @@ requirejs([
 	$( ".datepicker" ).datepicker();
 	$( ".accordion" ).accordion();
 	$( ".selector" ).accordion({
- 	 heightStyle: "auto"
+		heightStyle: "auto"
 	});
 
 
-	 $('.slider-container').slick({
+	$('.slider-top').slick({
 		dots: true,
-  	});
+		appendDots: '.slider-dots',
+		prevArrow: '.prev',
+		nextArrow: '.next'
+	});
+
+	$('.slider-bottom').slick({
+		dots: true,
+		appendDots: '.slider-dots-b',
+		prevArrow: '.prev-b',
+		nextArrow: '.next-b'
+	});
 
 	var Homepage = {
 		init: function(){
