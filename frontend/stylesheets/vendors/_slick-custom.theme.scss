@@ -38,7 +38,6 @@ $slick-opacity-not-active: 0.25 !default;
 		@return url($slick-font-path + $url);
 	}
 }
-
 /* Slider */
 
 .slick-list {
@@ -46,6 +45,11 @@ $slick-opacity-not-active: 0.25 !default;
 		background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
 	}
 }
+.slick-slider li:focus {
+	outline: none;
+}
+
+
 
 /* Icons */
 @if $slick-font-family == "slick" {
@@ -60,8 +64,8 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Arrows */
 
-.prev, .prev-b,
-.next, .next-b {
+.prev, .prev-b, .prev-p,
+.next, .next-b, .next-p {
 	line-height: 0px;
 	font-size: 0px;
 	cursor: pointer;
@@ -91,7 +95,7 @@ $slick-opacity-not-active: 0.25 !default;
 	}
 }
 
-.prev, .prev-b {
+.prev, .prev-b, .prev-p {
 	&:before {
 		content: $slick-prev-character;
 		font: 16px/20px 'FontAwesome';
@@ -99,7 +103,7 @@ $slick-opacity-not-active: 0.25 !default;
 	}
 }
 
-.next, .next-b {
+.next, .next-b, .next-p {
 	-webkit-box-ordinal-group: 2;
 	-webkit-order: 1;
 	-ms-flex-order: 1;
@@ -113,7 +117,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Dots */
 
-.slider-dots, .slider-dots-b {
+.slider-dots, .slider-dots-b, .slider-dots-p {
 	position: absolute;
 	bottom: -25px;
 	list-style: none;

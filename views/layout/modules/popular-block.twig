@@ -1,35 +1,43 @@
 <div class="popular">
 	<div class="container">
-		<div class="see-block">
-			<ul class="one-time">
-				<li>
-					<div class="title-img"></div>
-					<div class="img-holder">
-						<img src="img/popular-slide-1.png" width="409"  heigth="260" alt="image description">
-					</div>
-					<div class="text-block">
-						<h3>Russian Jazz Ballet Valery</h3>
-						<div class="title">Sit amet consectetuer adipiscing elit sed</div>
-						<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</p>
-						<a href="#" class="btn">LEARN MORE</a>
-					</div>
-				</li>
-			</ul>
+		<div class="holder-see">
+			<div class="see-block">
+				<div class="title-img"></div>
+				<ul class="slider-popular">
+					{% for i in sliderPopular %}
+						<li>
+							<div class="img-holder">
+								<img src="img/{{i.url}}" width="409"  heigth="260" alt="image description">
+							</div>
+							<div class="text-block">
+								<h3>{{i.titleH}}</h3>
+								<div class="title">{{i.title}}</div>
+								<p>{{i.description}}</p>
+								<a href="#" class="btn">LEARN MORE</a>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+				<div class="{{dots}}">
+					<button class="{{prev}}"></button>
+					<button class="{{next}}"></button>
+				</div>
+			</div>
 		</div>
 		<div class="popular-block">
 			<h4>Popular Must See</h4>
 			<div class="accordion">
 				{% for i in titles %}
-					<h5 {% if loop.last %}data{% endif %}>{{i.titleH}}</h5>
+					<h5>{{i.titleH}}</h5>
 					<div class="accord-block">
 						<div class="img-block">
 							<div class="img-holder">
-								<img {% if loop.last %}data{% endif %} src="{{i.img}}" width="136"  heigth="127" alt="image description">
+								<img src="{{i.img}}" width="136"  heigth="127" alt="image description">
 							</div>
 						</div>
 						<div class="text-block">
-							<div {% if loop.last %}data{% endif %} class="title">{{i.title}}</div>
-							<p {% if loop.last %}data{% endif %}>{{i.description}}</p>
+							<div class="title">{{i.title}}</div>
+							<p>{{i.description}}</p>
 						</div>
 					</div>
 				{% endfor %}

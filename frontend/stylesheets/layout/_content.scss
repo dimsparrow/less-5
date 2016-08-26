@@ -62,30 +62,32 @@
 		-ms-flex-align: end;
 		align-items: flex-end;
 	}
-	.see-block {
+	.holder-see {
 		border-bottom: 1px solid #c7c7c7;
 		-webkit-flex-basis: 44.45%;
 		-ms-flex-preferred-size: 44.45%;
 		flex-basis: 44.45%;
 		padding: 0 10px 34px 0;
+		overflow: hidden;
 	}
-	.one-time {
-		.title-img {
-			background: url('../img/see.png') no-repeat;
-			width: 404px;
-			height: 104px;
-			margin: 0 0 10px;
-			position: relative;
-			overflow: hidden;
-			&:after {
-				content: '';
-				background: url('../img/light.png') no-repeat;
-				position: absolute;
-				width: 586px;
-				height: 525px;
-				left: -117px;
-				top: -395px;
-			}
+	.see-block {
+		position: relative;
+	}
+	.title-img {
+		background: url('../img/see.png') no-repeat;
+		width: 404px;
+		height: 104px;
+		margin: 0 0 10px;
+		position: relative;
+		overflow: hidden;
+		&:after {
+			content: '';
+			background: url('../img/light.png') no-repeat;
+			position: absolute;
+			width: 586px;
+			height: 525px;
+			left: -117px;
+			top: -395px;
 		}
 	}
 	.popular-block {

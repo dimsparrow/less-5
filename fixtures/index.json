@@ -78,6 +78,23 @@
 		}
 	},
 
+	"sliderPopular": [
+		{"url": "popular-slide-1.png",
+		"titleH": "Russian Jazz Ballet Valery",
+		"title": "Sit amet consectetuer adipiscing elit sed",
+		"description": "Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero."
+		},
+		{"url": "popular-slide-1.png",
+		"titleH": "Russian Jazz Ballet Valery",
+		"title": "Sit amet consectetuer adipiscing elit sed",
+		"description": "Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero."
+		}
+	],
+
+	"dots": "slider-dots-p",
+	"prev": "prev-p",
+	"next": "next-p",
+
 	"includes": {
 		"galleryTop": {
 			"class": "slider-top",
@@ -85,10 +102,26 @@
 			"prev": "prev",
 			"next": "next",
 			"images": [
-				{"url": "slide-1.jpg"},
-				{"url": "b-slide-1.jpg"},
-				{"url": "slide-1.jpg"},
-				{"url": "b-slide-1.jpg"}
+				{"url": "slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"},
+				{"url": "b-slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"},
+				{"url": "slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"},
+				{"url": "b-slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"}
 			]
 		},
 		"galleryBottom": {
@@ -97,9 +130,21 @@
 			"prev": "prev-b",
 			"next": "next-b",
 			"images": [
-				{"url": "b-slide-1.jpg"},
-				{"url": "slide-1.jpg"},
-				{"url": "b-slide-1.jpg"}
+				{"url": "b-slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"},
+				{"url": "slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"},
+				{"url": "b-slide-1.jpg", "titleS": "fpo",
+				"title": "Rolling… and action",
+				"descriptionT": "Check-in at the perfect place to check out movie and TV magic",
+				"description": "WHAT TO DO:",
+				"textL": "STUDIO TOURS"}
 			]
 		}
 	}

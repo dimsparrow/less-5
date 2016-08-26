@@ -10,17 +10,19 @@
 {% endblock %}
 
 {% block content %}
-<div class="holder-slider">
-	{% include '../layout/modules/slider.twig' with {gal: includes.galleryTop} %}
-</div>
-{% include '../layout/modules/popular-block.twig' %}
-<div class="holder-slider">
-	{% include '../layout/modules/slider.twig' with {gal: includes.galleryBottom} %}
-</div>
-{% include '../layout/modules/featured-block.twig' %}
- <!--	{% import '../layout/utilities/form.twig' as indexForm %}
-	{{indexForm.field('text', title, name)}} -->
+	<div class="holder-slider">
+		{% include '../layout/modules/slider.twig' with {gal: includes.galleryTop} %}
+	</div>
+
+	{% include '../layout/modules/popular-block.twig' %}
+
+	<div class="holder-slider">
+		{% include '../layout/modules/slider.twig' with {gal: includes.galleryBottom} %}
+	</div>
+
+	{% include '../layout/modules/featured-block.twig' %}
 {% endblock %}
+
 {% block footerBottom %}
 	{% include '../layout/modules/footer-bottom.twig' %}
 {% endblock %}

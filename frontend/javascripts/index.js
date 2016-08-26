@@ -31,6 +31,13 @@ requirejs([
 		nextArrow: '.next-b'
 	});
 
+	$('.slider-popular').slick({
+		dots: true,
+		appendDots: '.slider-dots-p',
+		prevArrow: '.prev-p',
+		nextArrow: '.next-p'
+	});
+
 	var Homepage = {
 		init: function(){
 			this.click();

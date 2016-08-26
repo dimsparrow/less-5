@@ -5,16 +5,16 @@
 				<img src="img/{{i.url}}" width="1200" height="486" alt="image description">
 			</div>
 			<div class="title-slide">
-				fpo
+				{{i.titleS}}
 			</div>
 			<div class="text-block">
 				<div class="title">
-					<h2>Rolling… and action</h2>
-					<p>Check-in at the perfect place to check out movie and TV magic</p>
+					<h2>{{i.title}}</h2>
+					<p>{{i.descriptionT}}</p>
 				</div>
 				<div class="offer">
-					<p>WHAT TO DO:
-						<a href="#"> STUDIO TOURS</a>
+					<p>{{i.description}}
+						<a href="#"> {{i.textL}}</a>
 					</p>
 				</div>
 			</div>
@@ -25,3 +25,9 @@
 	<button class="{{gal.prev}}"></button>
 	<button class="{{gal.next}}"></button>
 </div>
+
+
+
+
+
+

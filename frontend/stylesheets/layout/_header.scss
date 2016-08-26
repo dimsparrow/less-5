@@ -22,6 +22,19 @@
 		.holder-search {
 			position: relative;
 			display: inline-block;
+			input[type="search"] {
+				padding: 8px 4px;
+				display: block;
+				width: 207px;
+				font-size: 14px;
+				font-family: 'Conv_AgendaMedium', Helvetica, sans-serif;
+				color: #747474;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				&:focus {
+					outline: none;
+				}
+			}
 		}
 		.holder-search:after {
 			content: '\f002';
