@@ -10,6 +10,34 @@
 		{"text": "Plan a meeting"},
 		{"text": "Privacy policyPrivacy policy"}
 	],
+
+	"subMenu": {
+		"whatToDo": {
+			"items": [
+				{"url": "sub-img-1.jpg",
+				"title": "Studio tours & tv tapings"},
+				{"url": "accord-img-1.jpg",
+				"title": "shopping"},
+				{"url": "sub-img-1.jpg",
+				"title": "food & drinks"},
+				{"url": "accord-img-1.jpg",
+				"title": "hotels"},
+				{"url": "sub-img-1.jpg",
+				"title": "arts & culture"},
+				{"url": "accord-img-1.jpg",
+				"title": "parks & recreation"}
+			]
+		},
+		"whereStay": {
+			"items": [
+				{"url": "sub-img-1.jpg",
+				"title": "Studio tours & tv tapings"},
+				{"url": "accord-img-1.jpg",
+				"title": "shopping"}
+			]
+		}
+	},
+
 	"titles": [
 		{"titleH": "Warner Bros. Studios VIP Tours",
 		"img": "img/accord-img-1.jpg",

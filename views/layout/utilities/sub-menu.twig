@@ -1,0 +1,11 @@
+<ul class="sub-menu">
+	{% for i in subM.items %}
+		<li class="drop">
+			<div class="img-holder">
+				<img src="img/{{i.url}}" width="195" height="211" alt="image-description">
+			</div>
+			<a href="#">{{i.title}}</a>
+		</li>
+	{% endfor %}
+</ul>
+
