@@ -48,7 +48,10 @@
 		left: 0;
 		right: 0;
 		top: 0;
-		span{
+		&:hover {
+			color: #ff9b4b;
+		}
+		span {
 			-webkit-transition: -webkit-transform .3s ease;
 			transition: -webkit-transform .3s ease;
 			transition: transform .3s ease;
@@ -95,6 +98,9 @@
 		font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
 		font-size: 18px;
 		text-transform: uppercase;
+		&:hover {
+			opacity: 0.9;
+		}
 	}
 	.title-form a {
 		position: relative;

@@ -17,8 +17,12 @@
 	}
 	.title-slide {
 		position: absolute;
-		top: 35%;
-		left: 50%;
+		top: 30%;
+		left: 40%;
+		font-size: 84.66px;
+		font-family: 'Conv_HelveticaNeueLTStd-Md', Helvetica, sans-serif;
+		text-transform: uppercase;
+		color: $white;
 	}
 	.text-block {
 		background: rgb(231,121,31); /* Old browsers */ /* FF3.6-15 */
@@ -31,6 +35,22 @@
 		right: 0;
 		bottom: -1px;
 		padding: 15px 10px 45px;
+		color: $white;
+		.title {
+			font-family: Arial, Helvetica, sans-serif;
+			text-shadow: 2px 2px 0 #d29565;
+			h2 {
+				font-weight: normal;
+				font-size: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+			p {
+				text-transform: none;
+				font-size: 21px;
+				color: $white;
+			}
+		}
 	}
 	.offer {
 		background: $purple;
@@ -39,6 +59,28 @@
 		right: 0;
 		bottom: 7px;
 		padding: 5px 0;
+		p {
+			font-size: 21px;
+			color: $white;
+		}
+		a {
+			color: #ff9b4b;
+			position: relative;
+			padding: 0 20px 0 5px;
+			&:hover {
+				opacity: .8;
+			}
+			&:after {
+				content: '\f054';
+				font: 14px/16px 'FontAwesome';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		}
 	}
 }
 .popular {
@@ -72,6 +114,23 @@
 	}
 	.see-block {
 		position: relative;
+		h3 {
+			margin: 0 0 10px;
+		}
+		.title {
+			font-size: 20px;
+			font-family: 'Conv_HelveticaLTStd-Bold', Helvetica, sans-serif;
+			color: #2a4a84;
+			margin: 0 0 10px;
+		}
+		p {
+			margin: 0 0 18px;
+		}
+		.img-holder {
+			margin: 0 0 20px;
+			-webkit-box-shadow: 0 0 0 0 #b5b5b5;
+			box-shadow: 5px 7px 30px #b5b5b5;
+		}
 	}
 	.title-img {
 		background: url('../img/see.png') no-repeat;
@@ -94,6 +153,10 @@
 		-webkit-flex-basis: 44.45%;
 		-ms-flex-preferred-size: 44.45%;
 		flex-basis: 44.45%;
+		padding: 40px 0 0;
+		h4 {
+			margin: 0 0 12px;
+		}
 	}
 	h5 {
 		padding: 7px 7px 7px 35px;
@@ -113,6 +176,9 @@
 			transform: translateY(-50%);
 			color: $purple;
 		}
+	}
+	.accordion {
+		border-top: 1px solid #c5c5c5;
 	}
 	.accord-block {
 		display: -webkit-box;
@@ -144,6 +210,9 @@
 			padding: 7px 0;
 			.title {
 				margin: 0 0 10px;
+				font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+				font-size: 18px;
+				color: #f7955b;
 			}
 		}
 	}
@@ -163,6 +232,7 @@
 	.ui-state-active {
 		background: none;
 		color: #717071;
+		border-bottom: none;
 		&:before {
 			content: '\f078';
 		}
@@ -179,6 +249,9 @@
 	background: linear-gradient(to bottom,  rgb(238,238,237) 15%,rgb(188,195,225) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeed', endColorstr='#bcc3e1',GradientType=0 ); /* IE6-9 */
 	overflow: hidden;
+	h4 {
+		margin: 0 0 15px;
+	}
 	.container {
 		position: relative;
 		&:before {
