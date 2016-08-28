@@ -18,18 +18,43 @@
 		justify-content: center;
 		a {
 			margin: 0 31px;
+			&:hover {
+				opacity: .8;
+			}
 		}
 	}
 	.footer-menu {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
+		text-align: center;
 		margin: 0 0 38px;
+		font-size: 0;
+		li {
+			padding: 0 8px;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			font-size: 14px;
+			&:after {
+				content: '|';
+				position: absolute;
+				left: 0;
+				top: 42%;
+				-webkit-transform: translateY(-42%);
+				-ms-transform: translateY(-42%);
+				transform: translateY(-42%);
+				color: #ed8e53;
+			}
+			&:first-child:after {
+				content: none;
+			}
+		}
+		a {
+			color: #f7955b;
+			text-decoration: underline;
+			&:hover {
+				color: $purple;
+				text-decoration: none;
+			}
+		}
 	}
 	p {
 		margin: 0 0 10px;
@@ -66,14 +91,22 @@
 			-webkit-align-items: center;
 			-ms-flex-align: center;
 			align-items: center;
+			.fa {
+				padding: 0 4px;
+				color: $white;
+				font-size: 18px;
+				opacity: .6;
+				&:hover {
+					opacity: 1;
+				}
+			}
 		}
 		.title {
 			margin: 0 16px 0 0;
-		}
-		[class^="fa-"]:before, [class*=" fa-"]:before {
-			font-size: 24px;
 			color: $white;
-			opacity: 0.5;
+			font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
 		}
 		.holder-book {
 			font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
@@ -85,6 +118,9 @@
 		.book {
 			color: $white;
 			position: relative;
+			&:hover {
+				color: #ff9b4b;
+			}
 			&:before {
 				content: '\e900';
 				font-family: 'icomoon' !important;

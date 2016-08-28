@@ -315,9 +315,22 @@
 				-webkit-flex-basis: 250px;
 				-ms-flex-preferred-size: 250px;
 				flex-basis: 250px;
+				.title {
+					color: #f7955b;
+					font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+					font-size: 18px;
+					margin: 0 0 7px;
+				}
 			}
 			p {
 				margin: 0 0 10px;
+				a {
+					color: #ff9b4b;
+					text-decoration: underline;
+					&:hover {
+						color: $purple;
+					}
+				}
 			}
 		}
 	}
@@ -331,6 +344,15 @@
 		text-align: right;
 		position: relative;
 		z-index: 3;
+		a {
+			color: #f7955b;
+			font-family: 'Conv_HelveticaNeueLTStd-Md', Helvetica, sans-serif;
+			font-size: 12px;
+			&:hover {
+				color: $purple;
+			}
+
+		}
 	}
 }
 .holder-slider {
