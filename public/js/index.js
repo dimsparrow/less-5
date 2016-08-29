@@ -57,9 +57,36 @@ requirejs([
 			});
 		}
 	};
+		Homepage.init();
 
-	Homepage.init();
+	var mobileWidth = 970;
+	var Page = {
+		init: function(){
+			this.carouselResize();
+		},
+		carouselResize: function(){
+			if($(window).width() <= mobileWidth){
+				if($('.slider-popular').hasClass('slick-initialized')){
+					$('.slider-popular').slick('unslick');
+				}
+			} else {
+				if(!$('.slider-popular').hasClass('slick-inititialized')) {
+					$('.slider-popular').slick({
+						dots: true,
+						appendDots: '.slider-dots-p',
+						prevArrow: '.prev-p',
+						nextArrow: '.next-p'
+					});
+				}
+			}
+		}
+	};
 
+	Page.init();
+
+	$(window).on('resize', function(){
+		Page.carouselResize();
+	});
 });
 
 

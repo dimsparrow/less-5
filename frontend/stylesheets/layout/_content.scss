@@ -2,13 +2,6 @@
 	img {
 		width: 100%;
 		height: auto;
-		/* position: relative;*/
-		/* left: 50%;*/
-		/* -webkit-transform: translateX(-50%);*/
-		/* -ms-transform: translateX(-50%);*/
-		/* transform: translateX(-50%);*/
-
-		/* for media + width: inherit image be center*/
 	}
 	li {
 		position: relative;
@@ -359,4 +352,25 @@
 	position: relative;
 }
 
+@include media (tablet) {
+	.holder-slider {
+		.img-holder {
+			overflow: hidden;
+			img {
+				width: inherit;
+				position: relative;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+		}
+	}
+	.prev-p, .next-p {
+		display: none;
+	}
+	.popular-block {
+		display: none;
+	}
+}
 

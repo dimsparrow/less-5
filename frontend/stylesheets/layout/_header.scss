@@ -11,7 +11,7 @@
 		position: relative;
 	}
 	&__top {
-		padding: 5px 0;
+		padding: 6px 0;
 		.holder-form {
 			-webkit-box-flex: 1.85;
 			-webkit-flex-grow: 1.85;
@@ -23,7 +23,7 @@
 			position: relative;
 			display: inline-block;
 			input[type="search"] {
-				padding: 8px 4px;
+				padding: 7px 4px 7px;
 				display: block;
 				width: 207px;
 				font-size: 14px;
@@ -31,6 +31,9 @@
 				color: #747474;
 				-webkit-box-sizing: border-box;
 				box-sizing: border-box;
+				border: none;
+				-webkit-box-shadow: 1px 1px 3px #c7c7c7;
+				box-shadow: 1px 1px 3px #c7c7c7;
 				&:focus {
 					outline: none;
 				}
@@ -48,9 +51,9 @@
 			color: $purple;
 		}
 		.holder-plan {
-			-webkit-flex-basis: 270px;
-			-ms-flex-preferred-size: 270px;
-			flex-basis: 270px;
+			-webkit-flex-basis: 274px;
+			-ms-flex-preferred-size: 274px;
+			flex-basis: 274px;
 			-webkit-box-align: center;
 			-webkit-align-items: center;
 			-ms-flex-align: center;
@@ -133,9 +136,9 @@
 	}
 	&__bottom {
 		background: $purple;
-		margin: 0 0 55px;
+		margin: 0 0 56px;
 		.holder-nav {
-			padding: 0 0 0 188px;
+			padding: 0 0 0 194px;
 			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
@@ -159,7 +162,7 @@
 			li {
 				display: inline-block;
 				vertical-align: middle;
-				margin: 0 20px 0 0;
+				margin: 0 12px 0 0;
 				&:first-child a:after {
 					content: none;
 				}
@@ -201,7 +204,7 @@
 				bottom: auto;
 				top: -12px;
 				z-index: 5;
-				right: -22px;
+				right: 0;
 			}
 		}
 		.book {
@@ -222,6 +225,43 @@
 				transform: translateY(-50%);
 				opacity: 0.5;
 			}
+		}
+	}
+}
+@include media (tablet) {
+	.header {
+		.container {
+			-webkit-box-pack: end;
+			-webkit-justify-content: flex-end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+		}
+		.links {
+			display: none;
+		}
+		.holder-form {
+			-webkit-box-ordinal-group: 2;
+			-webkit-order: 1;
+			-ms-flex-order: 1;
+			order: 1;
+			-webkit-box-flex: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-positive: 0;
+			flex-grow: 0;
+		}
+		.holder-plan {
+			-webkit-flex-basis: auto;
+			-ms-flex-preferred-size: auto;
+			flex-basis: auto;
+		}
+		.holder-nav {
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+		.holder-book {
+			display: none;
 		}
 	}
 }
