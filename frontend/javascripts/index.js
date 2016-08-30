@@ -57,9 +57,9 @@ requirejs([
 			});
 		}
 	};
-		Homepage.init();
 
-	var mobileWidth = 970;
+
+	var mobileWidth = 960;
 	var Page = {
 		init: function(){
 			this.carouselResize();
@@ -81,6 +81,8 @@ requirejs([
 			}
 		}
 	};
+
+	Homepage.init();
 
 	Page.init();
 
