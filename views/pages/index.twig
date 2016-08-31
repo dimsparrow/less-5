@@ -10,13 +10,13 @@
 {% endblock %}
 
 {% block content %}
-	<div class="holder-slider">
+	<div class="holder-slider top-slider-block">
 		{% include '../layout/modules/slider.twig' with {gal: includes.galleryTop} %}
 	</div>
 
 	{% include '../layout/modules/popular-block.twig' %}
 
-	<div class="holder-slider">
+	<div class="holder-slider bottom-slider-block">
 		{% include '../layout/modules/slider.twig' with {gal: includes.galleryBottom} %}
 	</div>
 

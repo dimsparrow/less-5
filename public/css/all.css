@@ -5501,13 +5501,13 @@ input[type="search"]::-ms-clear {
 
 .featured {
   padding: 90px 0 66px;
-  background: #eeeeed;
+  background: white;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #eeeeed 15%, #bcc3e1 100%);
+  background: -webkit-linear-gradient(top, white 15%, #bcc3e1 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #eeeeed), to(#bcc3e1));
-  background: linear-gradient(to bottom, #eeeeed 15%, #bcc3e1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, white), to(#bcc3e1));
+  background: linear-gradient(to bottom, white 15%, #bcc3e1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeed', endColorstr='#bcc3e1',GradientType=0 );
   /* IE6-9 */
@@ -5537,28 +5537,20 @@ input[type="search"]::-ms-clear {
     position: relative;
     z-index: 3;
     border: 1px solid #c8c8c8;
-    padding: 2px 0 0 0; }
-    .featured .trips .row {
-      padding: 12px 8px 14px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      border-bottom: 1px solid #c8c8c8; }
-      .featured .trips .row:last-child {
-        border-bottom: none; }
-      .featured .trips .row:first-child {
-        padding-bottom: 9px; }
+    display: flex; }
+    .featured .trips:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #c8c8c8;
+      top: 50%;
+      transform: translateY(-50%); }
     .featured .trips .trip {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      margin: 0 0 3px; }
+      padding: 15px 7px; }
       .featured .trips .trip .img-block {
         padding: 0 9px 0 0; }
       .featured .trips .trip .img-holder {
@@ -5656,7 +5648,27 @@ input[type="search"]::-ms-clear {
       -ms-flex-preferred-size: 62%;
       flex-basis: 62%; }
       .popular .slider-popular .text-block p {
-        margin-bottom: 10px; } }
+        margin-bottom: 10px; }
+  .main {
+    display: flex;
+    flex-direction: column; }
+    .main .bottom-slider-block {
+      order: 1; }
+    .main .featured {
+      padding: 30px 0; }
+      .main .featured .trips {
+        display: block; }
+        .main .featured .trips:after {
+          content: none; }
+        .main .featured .trips .trip {
+          border-bottom: 1px solid #c8c8c8; }
+        .main .featured .trips .text-block {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-basis: 100%; }
+    .main .slider-dots-b {
+      display: none; } }
 
 .footer {
   padding: 30px 0 56px;
@@ -5775,6 +5787,42 @@ input[type="search"]::-ms-clear {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         opacity: 0.5; }
+
+@media only screen and (max-width: 960px) {
+  .footer {
+    text-align: left; }
+    .footer .container {
+      display: flex; }
+    .footer .footer-menu {
+      text-align: left; }
+      .footer .footer-menu li {
+        padding: 20px 20px 20px 0; }
+        .footer .footer-menu li:after {
+          content: none; }
+    .footer .sponsors {
+      flex-wrap: wrap;
+      margin-bottom: 0; }
+      .footer .sponsors img {
+        height: auto; }
+      .footer .sponsors a {
+        margin-bottom: 15px;
+        margin-right: 30px;
+        margin-left: 0; }
+        .footer .sponsors a:nth-child(2) {
+          order: 2;
+          margin-bottom: 0; }
+          .footer .sponsors a:nth-child(2) img {
+            width: 155px; }
+        .footer .sponsors a:nth-child(1) {
+          order: 1; }
+          .footer .sponsors a:nth-child(1) img {
+            width: 88px; }
+        .footer .sponsors a:nth-child(3) img {
+          width: 70px; }
+    .footer .holder-footer-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
 
 .book-form {
   padding: 5px;
