@@ -82,6 +82,25 @@ requirejs([
 		}
 	};
 
+	var menu = {
+		init: function(){
+			this.btnMenu();
+		},
+		btnMenu: function() {
+			$('.holder-btn-menu').on('click', function(){
+				if(!$(this).hasClass('active')){
+					$(this).addClass('active');
+					$(this).next().slideDown('fast');
+				} else {
+					$(this).removeClass('active');
+					$(this).next().slideUp('fast');
+				}
+			});
+		}
+	};
+
+	menu.init();
+
 	Homepage.init();
 
 	Page.init();

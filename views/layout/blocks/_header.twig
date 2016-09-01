@@ -29,24 +29,29 @@
 			<strong class="header__logo">
 				<a href="#">Logo</a>
 			</strong>
-			<div class="holder-nav">
-				<nav class="nav">
-					<ul class="nav-menu">
-						<li>
-							<a href="#">WHAT TO DO</a>
-							{% include '../utilities/sub-menu.twig' with {subM: subMenu.whatToDo} %}
-						</li>
-						<li>
-							<a href="#">Where to Stay</a>
-						</li>
-						<li>
-							<a href="#">Trip Ideas</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="holder-book">
-					<a href="#" class="book">BOOK YOUR TRIP</a>
-					{% include '../utilities/form.twig' with {forms: include.form} %}
+			<div class="holder-block">
+				<div class="holder-btn-menu">
+					<a href="#" class="btn-menu">menu</a>
+				</div>
+				<div class="holder-nav">
+					<nav class="nav">
+						<ul class="nav-menu">
+							<li>
+								<a href="#">WHAT TO DO</a>
+								{% include '../utilities/sub-menu.twig' with {subM: subMenu.whatToDo} %}
+							</li>
+							<li>
+								<a href="#">Where to Stay</a>
+							</li>
+							<li>
+								<a href="#">Trip Ideas</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="holder-book">
+						<a href="#" class="book">BOOK YOUR TRIP</a>
+						{% include '../utilities/form.twig' with {forms: include.form} %}
+					</div>
 				</div>
 			</div>
 		</div>
