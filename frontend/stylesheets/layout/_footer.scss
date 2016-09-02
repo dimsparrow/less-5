@@ -2,6 +2,9 @@
 	padding: 30px 0 56px;
 	text-align: center;
 	background: #f1f1f3;
+	.holder-paragraf  {
+		display: none;
+	}
 	.sponsors {
 		margin: 0 0 30px;
 		display: -webkit-box;
@@ -134,6 +137,9 @@
 				opacity: 0.5;
 			}
 		}
+		.touch {
+			display: none;
+		}
 	}
 }
 
@@ -141,6 +147,9 @@
 	.footer {
 		text-align: left;
 		.container {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
 		}
 		.footer-menu {
@@ -153,6 +162,8 @@
 			}
 		}
 		.sponsors {
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 			margin-bottom: 0;
 			img {
@@ -163,6 +174,9 @@
 				margin-right: 30px;
 				margin-left: 0;
 				&:nth-child(2) {
+					-webkit-box-ordinal-group: 3;
+					-webkit-order: 2;
+					-ms-flex-order: 2;
 					order: 2;
 					margin-bottom: 0;
 				 	img {
@@ -170,6 +184,9 @@
 					}
 				}
 				&:nth-child(1) {
+					-webkit-box-ordinal-group: 2;
+					-webkit-order: 1;
+					-ms-flex-order: 1;
 					order: 1;
 					img {
 						width: 88px;
@@ -183,8 +200,18 @@
 			}
 		}
 		.holder-footer-nav {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
 			flex-direction: column;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			-ms-flex-pack: justify;
 			justify-content: space-between;
 		}
 	}
@@ -192,24 +219,52 @@
 @include media (mobile) {
 	.wrapper {
 		padding-bottom: 0;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 	.footer {
+		-webkit-box-ordinal-group: 4;
+		-webkit-order: 3;
+		-ms-flex-order: 3;
 		order: 3;
+		padding-bottom: 20px;
+		padding-top: 0;
 		&__bottom {
 			position: relative;
 			background: none;
 			padding-top: 0;
 			padding-bottom: 0;
 			.container {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
 				flex-direction: column;
+				-webkit-box-align: start;
+				-webkit-align-items: flex-start;
+				-ms-flex-align: start;
+				-ms-grid-row-align: flex-start;
 				align-items: flex-start;
 				padding-left: 0;
 				padding-right: 0;
 			}
 			.connect {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
 				flex-direction: column;
+				-webkit-box-align: start;
+				-webkit-align-items: flex-start;
+				-ms-flex-align: start;
+				-ms-grid-row-align: flex-start;
 				align-items: flex-start;
 				width: 100%;
 			}
@@ -220,12 +275,15 @@
 				margin-right: 0;
 				padding: 10px 15px;
 				width: 100%;
+				font-size: 34.5px;
 				background: $purple;
+				-webkit-box-sizing: border-box;
 				box-sizing: border-box;
 			}
 			.links {
-				padding: 12px 15px;	
+				padding: 12px 8px;
 				width: 100%;
+				-webkit-box-sizing: border-box;
 				box-sizing: border-box;
 				.fa {
 					color: #a05ab4;
@@ -236,6 +294,156 @@
 					}
 				}
 			}
+			.touch {
+				display: block;
+				font-size: 0;
+				padding: 20px 15px 25px;
+				li {
+					display: inline-block;
+					padding: 0 18px;
+					position: relative;
+					font-size: 20px;
+					&:last-child:after {
+						content: none;
+					}
+					&:first-child {
+						padding-left: 0;
+					}
+					&:after {
+						content: '|';
+						position: absolute;
+						right: 0;
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						-ms-transform: translateY(-50%);
+						transform: translateY(-50%);
+					}
+				}
+				a {
+					color: #333333;
+					&:hover {
+						opacity: .7;
+					}
+				}
+			}
 		}
-	} 
+		.container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			padding-right: 0;
+			padding-left: 0;
+			.holder-paragraf {
+				display: block;
+				-webkit-box-ordinal-group: 3;
+				-webkit-order: 2;
+				-ms-flex-order: 2;
+				order: 2;
+				padding: 0 15px;
+				p {
+					font-size: 10px;
+					color: #999;
+				}
+			}
+		}
+		.sponsors {
+			-webkit-box-ordinal-group: 2;
+			-webkit-order: 1;
+			-ms-flex-order: 1;
+			order: 1;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			padding: 0 15px 23px;
+			a {
+				margin-right: 0;
+			}
+		}
+		.holder-footer-nav {
+			p {
+				display: none;
+			}
+		}
+		.footer-menu {
+			margin-bottom: 10px;
+			li {
+				display: block;
+				padding: 0;
+				border-bottom: 1px solid #afafaf;
+				font-size: 20px;
+				text-transform: uppercase;
+				background: #e5e5e5;
+				&:first-child {
+					border-top: 1px solid #afafaf;
+				}
+				&:hover {
+					background: $white;
+				}
+				&:last-child, &:nth-last-child(2), &:nth-last-child(3) {
+					display: inline-block;
+					text-transform: none;
+					border-bottom: none;
+					background: #f1f1f3;
+					position: relative;
+					font-size: 16px;
+					&:before {
+						content: '';
+						position: absolute;
+						width: 5px;
+						height: 5px;
+						-webkit-border-radius: 50%;
+						border-radius: 50%;
+						right: 0;
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						-ms-transform: translateY(-50%);
+						transform: translateY(-50%);
+						background: #333;
+					}
+				}
+				&:last-child {
+					&:before{
+						content: none;
+					}
+				}
+			}
+			a {
+				display: block;
+				padding: 12px 15px;
+				color: #333;
+				text-decoration: none;
+			}
+		}
+	}
+}
+@include media (mobile-small) {
+	.footer {
+		&__bottom {
+			.links {
+				.fa {
+					font-size: 41px;
+				}
+			}
+		}
+		.footer-menu {
+			li {
+				&:last-child, &:nth-last-child(2), &:nth-last-child(3) {
+					font-size: 12px;
+				}
+			}
+		}
+		.sponsors {
+			padding: 0 3px;
+		}
+		.container {
+			.holder-paragraf {
+				p {
+					font-size: 8px;
+				}
+			}
+		}
+	}
 }

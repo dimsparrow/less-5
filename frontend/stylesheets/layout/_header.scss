@@ -201,6 +201,8 @@
 					position: absolute;
 					left: 0;
 					top: 50%;
+					-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
 					transform: translateY(-50%);
 					color: #ed8e53;
 					font-size: 15px;
@@ -248,15 +250,18 @@
 				-webkit-box-pack: end;
 				-webkit-justify-content: flex-end;
 				-ms-flex-pack: end;
-				justify-content: flex-end;	
+				justify-content: flex-end;
 			}
 		}
 		&__bottom {
 			.container {
-				-webkit-box-pack: end;
-				-webkit-justify-content: flex-end;
-				-ms-flex-pack: end;
-				justify-content: flex-end;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
 				display: flex;
 			}
 		}
@@ -300,6 +305,10 @@
 			background: #412953;
 			.container {
 				padding-right: 0;
+				-webkit-box-pack: end;
+				-webkit-justify-content: flex-end;
+				-ms-flex-pack: end;
+				justify-content: flex-end;
 			}
 		}
 		.holder-block {
@@ -310,7 +319,7 @@
 		.holder-nav {
 			display: none;
 			position: absolute;
-			bottom: -153px;
+			top: 51px;
 			right: 0;
 			padding-left: 0;
 			background: #662d91;
@@ -319,13 +328,14 @@
 			text-align: center;
 			li {
 				display: block;
-				margin-right: 0;	
+				margin-right: 0;
 				&:hover .sub-menu {
 					display: none;
-				}			
+				}
 				a {
 					padding: 15px 5px;
 					width: 100%;
+					-webkit-box-sizing: border-box;
 					box-sizing: border-box;
 					&:after {
 						content: none;
@@ -344,13 +354,26 @@
 			padding: 15px 5px;
 			font-size: 21px;
 			font-family: 'Conv_AgendaMedium', Helvetica, sans-serif;
-			text-transform: uppercase;	
-			color: $white;	
+			text-transform: uppercase;
+			color: $white;
 			width: 100%;
+			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 			&:hover {
+				-webkit-box-shadow: 0 0 0 5px #fff inset;
 				box-shadow: 0 0 0 5px #fff inset;
 				text-shadow: 1px 0;
+			}
+		}
+	}
+}
+@include media (mobile-small)  {
+	.header {
+		.holder-nav {
+			li {
+				a{
+					font-size: 12px;
+				}
 			}
 		}
 	}
